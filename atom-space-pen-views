@@ -1,0 +1,8 @@
+{View} = require 'atom-space-pen-views'
+class MyView extends View
+  attached: ->
+    # Always called with the equivalent of @afterAttach(true)!
+    #...
+
+  detached: ->
+    #...
