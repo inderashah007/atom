@@ -1,0 +1,6 @@
+# New way to turn off default behavior
+class ResultsView extends ScrollView
+  initialize: (@model) ->
+    disposable = super()
+    # turn off default scrolling behavior from ScrollView
+    disposable.dispose()
